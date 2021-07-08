@@ -6,7 +6,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from utils.menu import build_menu
 from utils.message import message
 
-def search_node_red(update, context):
+def init(update, context):
     bot = context.bot
     msg=str(update.message.text[7:]).strip()
     if msg != "":

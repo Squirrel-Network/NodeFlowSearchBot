@@ -11,7 +11,7 @@ __status__ = "Stable"
 ### IMPORT ###
 import logging
 from config import Config
-from commands import search, start
+from commands import search, start, source
 from telegram.ext import Updater, CommandHandler as CMH
 
 # Enable logging
@@ -23,9 +23,9 @@ def main():
 
     dp = updater.dispatcher
     function = dp.add_handler
-    function(CMH('start', start.start))
-    function(CMH('search', search.search_node_red))
-
+    function(CMH('start', start.init))
+    function(CMH('search', search.init))
+    function(CMH('source', source.init))
 
     updater.start_polling()
     updater.idle()

@@ -4,6 +4,6 @@
 # Copyright SquirrelNetwork
 
 """Import Files"""
-__all__ = ["search","start"]
+__all__ = ["search","source","start"]
 
 from commands import *
