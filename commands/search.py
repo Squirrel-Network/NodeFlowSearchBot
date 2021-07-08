@@ -12,7 +12,7 @@ def init(update, context):
     if msg != "":
         main_text = "Ecco i risultati della tua ricerca su NodeRed Flows"
         gurl = "https://flows.nodered.org/search?term={0}".format(msg.replace(' ','+'))
-        button_list = [InlineKeyboardButton("Go to =>", url=gurl)]
+        button_list = [InlineKeyboardButton("Vai su =>", url=gurl)]
         reply_markup = InlineKeyboardMarkup(build_menu(button_list, n_cols=1))
         bot.send_message(update.message.chat_id,text=main_text,reply_markup=reply_markup,parse_mode='HTML')
     else:
