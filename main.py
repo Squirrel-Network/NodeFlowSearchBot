@@ -5,7 +5,7 @@ __copyright__ = "Copyright 2021, SquirrelNetwork"
 __credits__ = ["https://github.com/Squirrel-Network"]
 __license__ = "GPL 3.0"
 __version__ = "1.0.0"
-__repository__ = "https://github.com/Squirrel-Network/Resources/blob/master/base_telegram_bot_Python"
+__repository__ = "https://github.com/Squirrel-Network/NodeFlowSearchBot"
 __status__ = "Stable"
 
 ### IMPORT ###
